@@ -1,6 +1,6 @@
 const request = require("request");
 const cheerio = require("cheerio");
-const chalk = require("chalk");
+//const chalk = require("chalk");
 
 
 
@@ -24,9 +24,9 @@ function handleHtml(html) {
     let total = selTool(counterArray[0]).text();
     let deaths = selTool(counterArray[1]).text();
     let recovered = selTool(counterArray[2]).text();
-    console.log(chalk.gray("Total cases"), total);
-    console.log(chalk.red("Total deaths"), deaths);
-    console.log(chalk.green("Recovered"), recovered);
+    console.log("Total cases", total);
+    console.log("Total deaths", deaths);
+    console.log("Recovered", recovered);
     
 
 }
