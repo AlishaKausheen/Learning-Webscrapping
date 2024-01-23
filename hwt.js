@@ -16,7 +16,9 @@ function cb(err, response, html) {
 
 function printScore(html) {
     let $ = cheerio.load(html);
-    
-
+    let elemArray = $(".ds-p-0")
+    for (let i = 0; i < elemArray.length; i++) {
+        console.log($(elemArray[i]).text())
+    }
     
 }
